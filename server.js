@@ -6,6 +6,7 @@ const port = 3000;
 const connectDB = require("./models/db");
 const routes = require("./router/api");
 connectDB();
+const { errorHandeler } = require("./Middleware/ErrorMiddleware"); 
 const app = express();
 
 
